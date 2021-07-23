@@ -1,0 +1,336 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+.getstarted .desk {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "comic sans ms";
+    color: #fff;
+
+}
+.getstarted h2{
+  color: #fff;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+.about-us{
+  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  text-align: center;
+  color: #fff;
+}
+
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+
+nav .logo{
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 2px;
+  font-size: 26px;
+  font-style: italic;
+}
+nav{
+  display: flex;
+  background-color: #364f6b;
+  justify-content: space-around;
+  padding: 20px 0;
+  color: white;
+  height: 80px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+nav ul li a{
+  color: rgb(255, 245, 245);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  
+  
+  
+}
+nav ul li a:hover{
+  color: white;
+  font-weight: bold;
+}
+
+.menu-toggle{
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-toggle input{
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-toggle span{
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(247, 239, 239);
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+.menu-toggle span:nth-child(2){
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+  opacity: 0;
+  transform: scale(0);
+}
+header{
+  display: inline;
+}
+
+
+.menu {
+  float: right;
+}
+
+
+section {
+  margin: auto;
+
+  margin-bottom: 50px;
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #364f6b;
+}
+.tengah h1 {
+  font-family: "comic sans ms";
+  font-weight: 800px;
+  font-size: 50px;
+  margin-bottom: 5px;
+  color: #fc5185;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  padding: 100px;
+}
+
+h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+}
+
+h4 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #fc5185;
+  width: 100%;
+  line-height: 50px;
+}
+
+a.tbl-biru {
+  background: #3f72af;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-biru:hover {
+  background: #fc5185;
+  text-decoration: none;
+}
+
+a.tbl-pink {
+  background: #fc5185;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-pink:hover {
+  background: #3f72af;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+.tutor-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kartu-tutor {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.kartu-tutor img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.kartu-tutor p {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  color: #364f6b;
+}
+
+.partner-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kartu-partner {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.kartu-partner img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.footer2 {
+  background-color: #2f5167;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: white;
+}
+
+.footer2 hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.footer2 hr.small {
+  margin: 20px 0;
+}
+
+.footer2 h6 {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.footer2 a {
+  color: #737373;
+}
+
+.footer2 a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: #ffffff;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+.copyright-text{
+  text-align: center;
+}
+
+
+
+.copyright-text {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer2 {
+    padding-bottoms: 0;
+  }
+  .footer2 .copyright-text,
+  .footer2  {
+    text-align: center;
+  }
+}
+
+
